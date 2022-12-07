@@ -10,6 +10,9 @@ $links = [
   ]
 ];
 
+include_once "./database/data-source.php";
+$database = new DataSource();
+
 $user = null;
 ?>
 

@@ -20,6 +20,9 @@
     case '/':
       require __DIR__ . '/views/home.php';
       break;
+    case '/database-error':
+      require __DIR__ . '/views/database-error.php';
+      break;
     case '/conditions-utilisations':
       require __DIR__ . '/views/condition-utilisation.php';
       break;
