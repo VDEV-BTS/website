@@ -35,7 +35,7 @@ $user = null;
 
       <div id="appbar-profile-menu" class="hidden absolute right-0 w-40 mt-2 p-1 rounded-md border border-zinc-400 shadow-lg text-sm bg-zinc-50">
         <?php if (is_null($user)) : ?>
-          <a href="/" class="w-full flex items-center px-3 py-2 rounded-md hover:bg-blue-500/70 outline-none focus-visible:bg-blue-500/70">Se connecter</a>
+          <a href="/login" class="w-full flex items-center px-3 py-2 rounded-md hover:bg-blue-500/70 outline-none focus-visible:bg-blue-500/70">Se connecter</a>
         <?php else : ?>
           <h1 class="py-2 px-3 font-semibold">Bonjour</h1>
 

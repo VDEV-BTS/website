@@ -29,6 +29,9 @@
     case '/donnees-personnelles':
       require __DIR__ . '/views/donnees-personnelles.php';
       break;
+    case '/login':
+      require __DIR__ . '/views/login.php';
+      break;
     default:
       require __DIR__ . '/views/404.php';
       break;
