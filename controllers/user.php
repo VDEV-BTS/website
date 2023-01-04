@@ -1,3 +1,3 @@
 <?php
 session_start();
-$user = $_SESSION["user"];
+$user = isset($_SESSION["user"]) ? $_SESSION["user"] : null;
