@@ -1,7 +1,7 @@
 <?php
 class DataSource
 {
-  public $database = null;
+  public ?PDO $database = null;
 
   function __construct()
   {
@@ -14,5 +14,11 @@ class DataSource
         header("Location: /database-error");
       }
     }
+  }
+
+  public function validateUser(string $email, string $password)
+  {
+    $result = $this->database->query("SELECT * FROM `user` WHERE email = '$email';")->fetch();
+    return $result["password"] === $password ? $result : null;
   }
 }
