@@ -1,10 +1,6 @@
 <?php
 $links = [
   [
-    "name" => "Trajets",
-    "link" => "/trajets"
-  ],
-  [
     "name" => "Reservation",
     "link" => "/reservation"
   ]

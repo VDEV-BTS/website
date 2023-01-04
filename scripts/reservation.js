@@ -1,6 +1,16 @@
-let old = $('.card').get(0)
-$('.card').click(function () {
-  if (old != null && $(old).hasClass('open')) $(old).toggleClass('open')
-  $(this).toggleClass('open')
-  old = this
-})
+function dispo() {
+  const reservation = document.getElementById('dispo')
+  reservation.classList.remove('hidden')
+}
+
+function howManyPets(ev) {
+  const pets = document.getElementById('howmanypets')
+  if (ev.id === 'pets-yes') pets.classList.remove('hidden')
+  else pets.classList.add('hidden')
+}
+
+function howManyCar(ev) {
+  const car = document.getElementById('howmanycar')
+  if (ev.id === 'car-yes') car.classList.remove('hidden')
+  else car.classList.add('hidden')
+}

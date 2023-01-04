@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MarieTeam</title>
   <link rel="stylesheet" href="styles/output.css">
+  <link rel="stylesheet" href="styles/global.css">
 </head>
 
 <body class="bg-zinc-50">
@@ -28,6 +29,9 @@
       break;
     case '/cookies':
       require __DIR__ . '/views/cookies.php';
+      break;
+    case '/reservation':
+      require __DIR__ . '/views/reservation.php';
       break;
     case '/donnees-personnelles':
       require __DIR__ . '/views/donnees-personnelles.php';
