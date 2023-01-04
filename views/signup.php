@@ -5,7 +5,7 @@
                 <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
                     Création de compte
                 </h1>
-                <form class="space-y-4 md:space-y-6" action="#">
+                <form class="space-y-4 md:space-y-6" action="/controllers/signup-m.php">
                     <div class="flex">
                         <div class="w-1/2 pr-1">
                             <label for="username" class="block mb-2 text-sm font-medium text-gray-900 ">Prénom</label>
